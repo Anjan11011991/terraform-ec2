@@ -5,15 +5,17 @@ variable "aws_region" {
 
 variable "instance_type" {
   type    = string
-  default = "t3.small"
+  default = "t3.micro"
 }
 
 variable "subnet_id" {
-  description = "Existing subnet ID for QA"
+  description = "Existing subnet ID"
   type        = string
+  default     = "subnet-050c0054003a446ca"
 }
 
 variable "security_group_ids" {
-  description = "Existing security group IDs for QA"
+  description = "Existing security group ID"
   type        = list(string)
+  default     = ["sg-03d7f706f90113dcd"]
 }
