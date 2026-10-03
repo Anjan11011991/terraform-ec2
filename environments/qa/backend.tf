@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket       = "REPLACE_WITH_YOUR_STATE_BUCKET"
+    bucket       = "terraform-s3-2026-13-qa"
     key          = "qa/ec2/terraform.tfstate"
     region       = "ap-south-1"
     encrypt      = true
